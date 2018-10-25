@@ -1,8 +1,12 @@
 require 'sinatra/base'
-class Quizz < Sinatra::Base
+class Quiz < Sinatra::Base
 
   before do
 
+  end
+
+  get '/' do
+    erb :app
   end
 
   run! if app_file == $0
